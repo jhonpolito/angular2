@@ -1,7 +1,8 @@
+<div [style.padding]="padding ? 40 : 0">
 <h3>{{ titulo }}</h3>
 <div *ngIf="estudiantes.length > 0">
   <ul>
-    <li *ngFor="#estudiante of estudiantes">
+    <li *ngFor="let estudiante of estudiantes">
       <span (click)="clickEnEstudiante($event)">
         {{estudiante}}</span>
     </li>
