@@ -1,0 +1,13 @@
+<h3>{{ titulo }}</h3>
+<div *ngIf="estudiantes.length > 0">
+  <ul>
+    <li *ngFor="#estudiante of estudiantes">
+      <span (click)="clickEnEstudiante($event)">
+        {{estudiante}}</span>
+    </li>
+  </ul>
+</div>
+<div *ngIf="estudiantes.length == 0">
+  <span>No hay ningun estudiante</span>
+</div>
+</div>
