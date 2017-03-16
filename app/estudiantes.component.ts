@@ -16,6 +16,10 @@ export class EstudiantesComponent {
   redondeadas = false;
   padding = true;
 
+cambiar(evento: any) {
+  this.titulo = evento.target.value;
+}
+
 constructor(estudiantesService: EstudiantesService) {
   this.estudiantes = estudiantesService.listaDeEstudiantes('universidad nacional');
 }

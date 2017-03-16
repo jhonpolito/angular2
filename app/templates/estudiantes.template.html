@@ -11,4 +11,8 @@
 <div *ngIf="estudiantes.length == 0">
   <span>No hay ningun estudiante</span>
 </div>
+<br>
+<input type txt="text" [(ngModel)] = "titulo"/>
+<input type txt="text" [value]="titulo"(input)=cambiar($event)>
+<button (click)="titulo = ''">Borrar</button>
 </div>
